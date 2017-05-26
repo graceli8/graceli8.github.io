@@ -74,6 +74,12 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
+	
+function onClick(element) {
+  document.getElementById("myButton").onclick = function () {
+        location.href = "https://www.dropbox.com/s/wpxv80ksv8813c3/Grace%20Li%20Resume%20.pdf?dl=0";
+	  location.target = "_blank";
+}
 </script>
 
 <!-- Parallax Image with Logo Text -->
@@ -96,7 +102,7 @@ function myFunction() {
     <div class="w3-col m6 w3-padding-large">
       <p>I'm Grace, and currently I am studying Computer Science at the University of California, Berkeley. As both an artist and aspiring software engineer, I love exploring my passion for creativity and design through personal and classroom projects. Some of my favorite assignments to work on have been ones with a strong visual aspect or interesting algorithmic design. <br><br>Whatever new idea I decide to tackle next, I try to bring a clear sense of innovation and attention to detail. If you are interested in knowing more about my work, feel free to connect with me on <style type="text/css">.hover:hover{color:#0077B5}</style><a href="https://www.linkedin.com/in/grace-li-b53971b8/" target="_blank" class="hover">LinkedIn</a> or view my resume. I look forward to getting in touch! </p>
       <br>
-      <button href="https://www.dropbox.com/s/wpxv80ksv8813c3/Grace%20Li%20Resume%20.pdf?dl=0" target="_blank" class="w3-button w3-padding-large w3-light-grey" style="width:150px">RESUME</button>
+      <button href="https://www.dropbox.com/s/wpxv80ksv8813c3/Grace%20Li%20Resume%20.pdf?dl=0" target="_blank" class="w3-button w3-padding-large w3-light-grey" onclick="onClick(this)" style="width:150px">RESUME</button>
     </div>
   </div>
 </div>
